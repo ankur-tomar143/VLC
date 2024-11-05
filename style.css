@@ -1,0 +1,109 @@
+/* ------------import font-------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+/*-----------Header(titleBar) Code----------*/
+/* outline does not effect element dimension
+while border do it.  */
+
+header {
+  height: 5rem;
+}
+
+.titleBar {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.titleImg {
+  height: 60%;
+  margin-left: 1rem;
+}
+
+.titleText {
+  font-size: 1rem;
+}
+/* withOut giving height to div , 
+align-items is not working ; */
+.menuBar {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+  height: 50%;
+  align-items: center;
+}
+
+/* ----------------mainContentCode-------- */
+main {
+  background-color: rgb(0, 0, 0);
+  height: calc(100vh - 8rem);
+}
+
+/* -------------Footer code -------------- */
+
+footer {
+  height: 3rem;
+}
+
+/* --------------positing------------ */
+.menu {
+  position: relative;
+  background-color: rgb(240, 240, 240);
+}
+
+.ulItem {
+  position: absolute;
+  background-color: rgb(220, 223, 229);
+  top: 1px;
+  width: 8rem;
+  display: none;
+  /* background-color: aqua; */
+}
+/* #Playback{
+  background-color: brown;
+  border: 5px solid gold;
+} */
+li {
+  padding: 0.25rem;
+}
+
+.menu:hover{
+  background-color: lightblue;
+}
+
+.menu:hover .ulItem{
+    display: block;
+}
+
+/* -----------------Open Button ----------- */
+.video-input{
+  display: none;
+  /* height: 100%; */
+}
+video{
+  height: 100%;
+  /* width: 100%; */
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toast{
+  background-color:transparent;
+  position: fixed;
+  top: 6rem;
+  right: 30px;
+  color: rgb(240, 240, 240);
+  font-size: larger;
+  display: none;
+  font-weight: 900;
+
+}
